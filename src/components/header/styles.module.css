@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  border-bottom: 5px solid rgb(253, 123, 123);
+  background-color: khaki;
+}
+
+.Title {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.SocialMediaIcon {
+  padding: 10px;
+  color: black;
+}
+
+.SocialMediaIcon:hover {
+  color: darkgray;
+  cursor: pointer;
+}
