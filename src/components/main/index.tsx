@@ -31,19 +31,21 @@ export default function Main() {
   };
 
   return (
-    <main>
-      <h1>Obtenha informações sobre seu CEP</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
+    <main className={styles.Main}>
+      <form className={styles.Form} onSubmit={handleSubmit}>
+        <h1 className={styles.Title}>Obtenha informações sobre seu CEP</h1>
+        <label className={styles.FormLabel}>
           Informe o CEP:
+          <br />
           <input
             type="text"
             name="CEP"
             value={cep}
             onChange={handleCepChange}
+            className={styles.FormLabelInput}
           />
         </label>
-        <input type="submit" value="Submit" />
+        <input className={styles.FormSubmitButton} type="submit" value="Submit" />
       </form>
     </main>
   );

@@ -1,0 +1,65 @@
+.Main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Title {
+  font-size: 4vh;
+  font-weight: 400;
+}
+
+.Form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 5%;
+  background-color: rgba(253, 248, 239, 0.8);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2% 2.5%;
+  min-height: 50vh;
+  padding-top: 20px;
+}
+
+.FormLabel {
+  font-size: medium;
+}
+
+.FormLabelInput {
+  margin: 10px 0px;
+  margin-top: 5px;
+  min-width: 200px;
+  min-height: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.FormSubmitButton {
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid darkgreen;
+  background-color: rgb(82, 184, 82);
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.FormSubmitButton:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+}
+
+@media only screen and (max-width: 768px) {
+  .Form {
+    width: 90%;
+  }
+  .Main {
+    min-height: 70%;
+  }
+
+  .Title {
+    font-size: 2vh;
+  }
+}
