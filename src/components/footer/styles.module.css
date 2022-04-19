@@ -1,0 +1,51 @@
+footer {
+  background-color: rgb(65, 65, 65);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3% 0%;
+  align-items: center;
+}
+
+.DevNameInfo {
+  font-size: x-large;
+  margin: 0px;
+}
+
+.ProjectInfo {
+  font-size: larger;
+  margin: 0px;
+}
+
+.ProjectInfoList {
+  list-style-type: circle;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: rgb(161, 161, 161);
+}
+
+@media only screen and (max-width: 768px) {
+  .DevNameInfo {
+    font-size: small;
+  }
+
+  .ProjectInfo {
+    margin: 30px;
+  }
+
+  .ProjectInfoList {
+    margin: 2px;
+    padding: 0px 20px;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+}
