@@ -13,6 +13,7 @@ export default function Header() {
             className={style.SocialMediaIcon}
             icon={faGithub}
             size="3x"
+            title="Github"
           />
         </a>
         <a href="https://www.linkedin.com/in/carlos-cerqueira-5153991aa/">
@@ -20,6 +21,7 @@ export default function Header() {
             className={style.SocialMediaIcon}
             icon={faLinkedin}
             size="3x"
+            title="LinkedIn"
           />
         </a>
       </div>

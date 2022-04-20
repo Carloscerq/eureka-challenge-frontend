@@ -53,12 +53,14 @@ export default function Main() {
             value={cep}
             onChange={handleCepChange}
             className={styles.FormLabelInput}
+            title="Informe o CEP"
           />
         </label>
         <input
           className={styles.FormSubmitButton}
           type="submit"
           value="Submit"
+          title="Submit"
         />
       </form>
       {showCard ? (
