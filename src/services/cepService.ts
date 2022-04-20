@@ -1,8 +1,15 @@
 import axios from "axios";
+import ICep from "../dto/cepInfo"
 
-export default {
-    getCep(cep: string) {
-        console.log(cep);
-        return true;
+const cepService = {
+    async getCep(cep: string): Promise<ICep | void> {
+        try {
+            const response = await axios.get(`http://localhost:8000/${cep}`, {});
+            return response.data as ICep;
+        } catch {
+            throw new Error("CEP invalido!");
+        }
     }
 }
+
+export default cepService;
